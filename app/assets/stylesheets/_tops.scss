@@ -1,4 +1,97 @@
-.top{
-  color: green;
-  
+
+
+.header{
+  height :200px;
+  width: 100vw;
+  position: fixed;
+  top: 0 ;
+  background-color: black;
+  background-image:image-url('ring.png');
+  background-size: cover;
+  .header_box{
+    text-align: center;
+    margin: 0 auto;
+    .header_title{
+      color: white;
+      font-size:45px ;
+      
+    }
+  }
 }
+
+.contents1{
+  margin-top: 250px;
+  width: 100vw;
+  height: 500px;
+  .contents1_box{
+    margin: 0 auto;
+    .contents1_title{
+    font-size: 35px;
+    text-align: center;
+    height: 40px;
+    }
+    .guide_box1{
+      margin: 0 auto;
+      height:400px;
+      width: 850px;
+      border: thin solid;
+      padding: 40px 80px;
+    }
+  }
+}
+
+.contents2{
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 100vw;
+  height: 500px;
+  .contents2_box{
+    margin: 0 auto;
+    .contents2_title{
+    font-size: 35px;
+    text-align: center;
+    height: 40px;
+    }
+    .guide_box2{
+      margin: 0 auto;
+      height:400px;
+      width: 850px;
+      border: thin solid;
+      padding: 40px 80px;
+      
+    }
+  }
+}
+.contetns3{
+  .contents3_box{
+    .start_btn
+
+  }
+}
+
+.footer{
+  width: 100vw;
+  height: 150px;
+  background-color: black;
+  color:white;
+  
+  .footer_text{
+    
+    width: 100vw;
+    height: 55px;
+    background-color: black;
+    color:white;
+    .footer_title{
+      bottom: 0;
+      height: 35px;
+      text-align: center;
+      font-size: 25px;
+    }
+    .copylight{
+      height: 20px;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}
+  
