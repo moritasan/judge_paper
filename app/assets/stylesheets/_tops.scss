@@ -67,7 +67,7 @@
   width: 100vw;
   
   .contents3_box{
-    cursor: point;
+    
     .start_btn{
       padding: 10px;
       margin: 0 auto;
@@ -77,6 +77,12 @@
       background-color: black;
       color: white;
       display:flex;
+      box-shadow: rgba(0,0,0,0.22) 0px 2px 4px;
+      cursor: pointer;
+      &:hover{
+        transform:scale(1.05);
+        opacity :0.6 ;
+      }
       .statt_btn_icon{
         height: 50px;
         width: 50px;
@@ -85,8 +91,9 @@
         display:block;
       }
       .start_btn_text{
+        
         font-size: 25px;
-
+        
       }
     }
   }
