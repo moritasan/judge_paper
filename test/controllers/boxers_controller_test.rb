@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BoxerControllerTest < ActionDispatch::IntegrationTest
+class BoxersControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

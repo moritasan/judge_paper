@@ -1,0 +1,123 @@
+.header
+  .header_box
+    .header_title
+      Judge Paper
+
+.boxer_input
+  情報入力
+  .boxer_input_box
+    .boxer_input_box_red
+      = form_for @boxer do |f|
+        .box_title
+          赤コーナー選手
+        .boxer_name_red
+          お名前(全角)を入力してください (必須)
+        .name_input_box
+          .boxer_name_red_input
+            = f.text_field :last_name, id:"input-last_name", placeholder: '姓'
+          .boxer_name_red_input
+            = f.text_field :first_name, id:"input-first_name",placeholder: '名'
+        .boxer_name_red
+          お名前(ふりがな)を入力してください(必須)
+        .name_input_box
+          .boxer_name_red_input
+            = f.text_field :last_name_kana, id:"input-last_name_kana", placeholder: '姓'
+          .boxer_name_red_input
+            = f.text_field :first_name_kana, id:"input-first_name_kana",placeholder: '名'
+        .boxer_stance_red
+          構えを選択してください(任意)
+          .stance_input_box
+            = f.collection_select :stance,{},{prompt: "選択してください"} , class:"input-stance"
+        .boxer_style_red
+          スタイルを選択してください(任意)
+          .style_input_box
+            = f.collection_select :style,{},{prompt: "選択してください"} , class:"input-style"
+        .boxer_height_red
+          身長を入力してください(任意)
+          .boxer_height_red_input
+            = f.number_field :height, class:"input-height"
+            cm
+        .boxer_weight_red
+          体重を入力してください(任意)
+          .boxer_weight_red_input
+            = f.number_field :weight, class:"input-weight"
+            kg
+        .boxer_reach_red
+          腕の長さを入力してください(任意)
+          .boxer_reach_red_input
+            = f.number_field :reach, class:"input-reach"
+            cm
+        .boxer.birthday_red
+          誕生日を入力してください(任意)
+          .boxer_birthday_red_input
+            != sprintf(f.date_select :birthday,{use_month_numbers:true, start_year: 1940,end_year: (Time.now.year - 18),date_separator: '&nbsp;/&nbsp;', prompt:""}, class: "input-birthday" )
+
+    .boxer_input_box_blue
+      = form_for @boxer do |f|
+        .box_title
+          青コーナー選手
+        .boxer_name_blue
+          お名前(全角)を入力してください (必須)
+        .name_input_box
+          .boxer_name_blue_input
+            = f.text_field :last_name, id:"input-last_name", placeholder: '姓'
+          .boxer_name_blue_input
+            = f.text_field :first_name, id:"input-first_name",placeholder: '名'
+        .boxer_name_blue
+          お名前(ふりがな)を入力してください(必須)
+        .name_input_box
+          .boxer_name_blue_input
+            = f.text_field :last_name_kana, id:"input-last_name_kana", placeholder: '姓'
+          .boxer_name_blue_input
+            = f.text_field :first_name_kana, id:"input-first_name_kana",placeholder: '名'
+        .boxer_stance_blue
+          構えを選択してください(任意)
+          .stance_input_box
+            = f.collection_select :stance,{},{prompt: "選択してください"} , id:"input-stance"
+        .boxer_style_blue
+          スタイルを選択してください(任意)
+          .style_input_box
+            = f.collection_select :style,{},{prompt: "選択してください"} , id:"input-style"
+        .boxer_height_blue
+          身長を入力してください(任意)
+          .boxer_height_blue_input
+            = f.number_field :height, class:"input-height"
+            cm
+        .boxer_weight_blue
+          体重を入力してください(任意)
+          .boxer_weight_blue_input
+            = f.number_field :weight, class:"input-weight"
+            kg
+        .boxer_reach_blue
+          腕の長さを入力してください(任意)
+          .boxer_reach_blue_input
+            = f.number_field :reach, class:"input-reach"
+            cm
+        
+        .boxer.birthday_blue
+          誕生日を入力してください(任意)
+          .boxer_birthday_blue_input
+            != sprintf(f.date_select :birthday,{use_month_numbers:true, start_year: 1940,end_year: (Time.now.year - 18),date_separator: '&nbsp;/&nbsp;', prompt:""},class: "input-birthday" )
+        .actions
+          = f.submit "次へ", class: 'btn'
+
+
+
+
+
+.contents3
+  .contents3_box
+    =link_to "/boxers/new"do
+      .start_btn
+        .start_btn_icon
+        .start_btn_text
+          採点を始める
+
+
+
+.footer
+  .footer_text
+    .footer_title
+      Judge Paper
+    .copylight
+      (C) Mitsuki Morita

@@ -3,6 +3,11 @@
   .header_box
     .header_title
       Judge Paper
+  .links
+    .link ログイン
+    .link 新規登録
+
+
 
 .contents1
   .contents1_box
@@ -31,11 +36,13 @@
 .contents3
 
   .contents3_box
-    .start_btn
-      .statt_btn_icon
-      .start_btn_text
-        採点を始める
+    =link_to "/boxers/new"do
+      .start_btn
+        .start_btn_icon
+        .start_btn_text
+          採点に進む
 
+          
 
 .footer
   .footer_text

@@ -1,0 +1,221 @@
+.boxer_input{
+  margin-top: 250px;
+  width: 100vw;
+  height: 950px;
+  text-align: center;
+  font-size: 35px;
+  .boxer_input_box{
+    background-color: white;
+    width:100vw;
+    height:800px;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    .boxer_input_box_red{
+      border: thin solid;
+      font-size: 25px;
+      height: 650px;
+      width: 40%;
+      background-color: white;
+      .box_title{
+        font-size: 30px;
+        color:red;
+      }
+      .boxer_name_red{
+        font-size: 15px;
+        margin-top: 5px;
+      }
+      .name_input_box{
+        display:flex;
+        .boxer_name_red_input{
+          width: 80%;
+        }
+      }
+      .boxer_stance_red{
+        font-size: 15px;
+        margin-top: 5px;
+        .stance_input_box{
+          .input-stance{
+            width:60%;
+            height:35px;
+          }
+        }
+      }
+      
+      .boxer_style_red{
+        font-size: 15px;
+        margin-top: 5px;
+        .style_input_box{
+          .input-style{
+
+          }
+        }
+      }
+      .boxer_height_red{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_height_red_input{
+          .input-height{
+            width:60%;
+            height:35px;
+          }
+        }
+      }
+      .boxer.birthday_red{
+        .boxer_birthday_red_input{
+          .input-birthday{
+            width:20%;
+            height:35px;
+          }
+        }
+      }
+
+
+
+
+      .boxer_weight_red{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_weight_red_input{
+          .input-weight{
+            width:60%;
+            height:35px;
+          }
+        }
+      }
+      .boxer_reach_red{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_reach_red_input{
+          .input-reach{
+            width:60%;
+            height:35px;
+          }
+        }
+      }
+      .boxer.birthday_red{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_birthday_red_input{
+        }
+      }
+    }
+    .boxer_input_box_blue{
+      border: thin solid;
+      font-size: 25px;
+      height: 650px;
+      width: 40%;
+      background-color: white;
+      .box_title{
+        font-size: 30px;
+        color:blue;
+      }
+      .boxer_name_blue{
+        font-size: 15px;
+        margin-top: 5px;
+      }
+      .name_input_box{
+        display:flex;
+        .boxer_name_blue_input{
+          width: 80%;
+        }
+      }
+      .boxer_stance_blue{
+        font-size: 15px;
+        margin-top: 5px;
+        .stance_input_box{
+          .input-stance{
+            width:60%;
+            height:35px;
+          }
+        }
+      }
+      
+      .boxer_style_blue{
+        font-size: 15px;
+        margin-top: 5px;
+        .style_input_box{
+        }
+      }
+      .boxer_height_blue{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_height_blue_input{
+          .input-height{
+            width:60%;
+            height:35px;
+          }
+        }
+      }
+      .boxer_weight_blue{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_weight_blue_input{
+          .input-weight{
+          width:60%;
+          height:35px;
+          }
+        }
+      }
+      .boxer_reach_blue{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_reach_blue_input{
+          .input-reach{
+          width:60%;
+          height:35px;
+          }
+        }
+      }
+      .boxer.birthday_blue{
+        font-size: 15px;
+        margin-top: 5px;
+        .boxer_birthday_blue_input{
+          .input-birthday{
+            width:20%;
+            height:35px;
+          }
+        }
+      }
+    }
+
+  }
+
+  
+}
+.contents3{
+  height:200px;
+  width: 100vw;
+  
+  .contents3_box{
+    
+    .start_btn{
+      padding: 10px;
+      margin: 0 auto;
+      width: 200px;
+      height: 60px;
+      border-radius: 10px ;
+      background-color: black;
+      color: white;
+      display:flex;
+      box-shadow: rgba(0,0,0,0.22) 0px 2px 4px;
+      cursor: pointer;
+      &:hover{
+        transform:scale(1.05);
+        opacity :0.6 ;
+      }
+      .start_btn_icon{
+        height: 50px;
+        width: 50px;
+        background:url('icon.png') no-repeat;
+        content:"";
+        display:block;
+      }
+      .start_btn_text{
+        
+        font-size: 25px;
+        
+      }
+    }
+  }
+}

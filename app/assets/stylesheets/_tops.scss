@@ -1,4 +1,6 @@
-
+a{
+  text-decoration: none;
+}
 
 .header{
   height :200px;
@@ -15,6 +17,15 @@
       color: white;
       font-size:45px ;
       
+    }
+  }
+  .links{
+    
+    float: right;
+    display:flex;
+    .link{
+      color: white;
+      margin-right: 10px;
     }
   }
 }
@@ -83,7 +94,7 @@
         transform:scale(1.05);
         opacity :0.6 ;
       }
-      .statt_btn_icon{
+      .start_btn_icon{
         height: 50px;
         width: 50px;
         background:url('icon.png') no-repeat;
